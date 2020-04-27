@@ -1,0 +1,115 @@
+.scene {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 646px;
+    perspective: 1400px;
+    margin: 80px;
+    border: 1px solid gray; 
+}
+
+.right, .left {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    opacity: .2;
+}
+
+.left {
+    align-self: flex-start;
+    left: 0px;
+    background-color: rgb(143, 98, 39);
+}
+
+.book {
+    position: relative;
+    width: 500px;
+    height: 646px;
+    transform-style: preserve-3d;
+    transform: translateZ(-70px) rotateY(20deg) rotateX(-3deg);
+    transition: transform 1s;
+    box-shadow: 50px 30px 50px -50px black;
+    z-index:2;
+}
+
+.book-face {
+    position: absolute;
+    opacity: .4;
+    /* border: 2px solid black; */
+}
+
+.book-face-front {
+    background-image: url(../img/daod-frontcover@500x646.jpg);
+    opacity: 1;
+}
+
+.book-face-back {
+    background-image: url(../img/daod-backcover@500x646.jpg);
+    opacity: 1;
+    /* box-shadow: 30px 300px 50px -10px black */
+}
+
+.book-face-left {
+    background-image: url(../img/daod-spine@49x646.jpg);
+    opacity: 1;
+}
+
+.book-face-right {
+    background-image: repeating-linear-gradient(90deg, rgb(240, 237, 205) 80%, rgb(218, 213, 170) 90%);
+    opacity: 1;
+}
+
+.book-face-bottom {
+    background-image: repeating-linear-gradient( rgb(240, 237, 205) 80%, rgb(218, 213, 170) 90%);
+    opacity: 1;
+    /* box-shadow: 100px, 100px, 10px, 10px black; */
+}
+
+.book-face-top {
+    background-image: repeating-linear-gradient( rgb(240, 237, 205) 80%, rgb(218, 213, 170) 90%);
+    opacity: 1;
+}
+
+.book-face-front,
+.book-face-back {
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    max-height: 646px;
+    background-color: blueviolet;
+    transform: translateZ(-25px);
+}
+
+.book-face-right,
+.book-face-left {
+    width: 50px;
+    height: 646px;
+    left: 225px;
+    background-color: rgb(190, 105, 151);
+}
+
+.book-face-top,
+.book-face-bottom {
+    width:  500px;
+    height: 50px;
+    top: 300px;
+    background-color: rgb(105, 190, 140);
+}
+
+.book-face-front  { transform: rotateY(  0deg) translateZ(25px); }
+.book-face-back   { transform: rotateY(180deg) translateZ(25px); }
+
+.book-face-right  { transform: rotateY( 90deg) translateZ(250px); }
+.book-face-left   { transform: rotateY(-90deg) translateZ(250px); }
+
+.book-face-top    { transform: rotateX( 90deg) translateZ(324px); }
+.book-face-bottom { transform: rotateX(-90deg) translateZ(320px); }
+
+.scene:hover .book{
+    transform: rotateX(-15deg) rotateY(200deg);
+    transition: transform 1s ease-out;
+}
