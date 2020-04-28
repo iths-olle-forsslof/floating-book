@@ -5,20 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Floating book experiment</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="scene">
-        <div class="right"></div>
-        <div class="left"></div>
-        <div class="book">
-            <div class="book-face book-face-front"></div>
-            <div class="book-face book-face-back"></div>
-            <div class="book-face book-face-right"></div>
-            <div class="book-face book-face-left"></div>
-            <div class="book-face book-face-top"></div>
-            <div class="book-face book-face-bottom"></div>
+    <section class="main-container">
+        <div class="scene">
+            <div class="book">
+                <div class="book-face book-face-front"></div>
+                <div class="book-face book-face-back"></div>
+                <div class="book-face book-face-right"></div>
+                <div class="book-face book-face-left"></div>
+                <div class="book-face book-face-top"></div>
+                <div class="book-face book-face-bottom"></div>
+            </div>
         </div>
-    </div>
+        <div class="scene2">
+            <img src="./img/exmag1_cover@500x618.jpg" alt="book cover">
+        </div>
+        <section class="info-box">
+            <h1 class="banner"><span class="random-text"></span></h1>
+            <h1 class="banner2">ExMag #1 is here! For KICKSTARTER backers only!</h1>
+            <p class="info-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam at facilis blanditiis magni possimus exercitationem voluptate, 
+                dicta dolores, cupiditate qui ad? Quod corporis provident error consectetur cumque voluptate suscipit reiciendis, odit rerum id autem veritatis. 
+                Aut asperiores quidem pariatur magni ducimus reprehenderit molestiae nemo veritatis. Vitae ex, corrupti tenetur earum repudiandae recusandae 
+                nostrum rerum temporibus minus deserunt nemo accusantium nobis eveniet nisi dicta placeat omnis, eos dolore error? Quam exercitationem eaque 
+                delectus commodi. Natus laboriosam soluta, dolore iure debitis consectetur corporis quae porro? 
+                Numquam voluptatem aliquid facilis iste odit, officia harum rerum recusandae voluptas provident delectus modi, ipsum omnis et!</p>
+            <div class="btn-container">
+                <p class="cart-btn">
+                    <a href="https://shop.blackbox.cool/products/prod_cpmkxvkncncsa6/aeon-6" class="blackbox-widget" data-product="prod_cpmkxvkncncsa6" data-color="#64bd28" title="Buy Aeon 6 on Blackbox">Buy Aeon 6</a>
+                    <script>
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://cdn.blackbox.cool/embed/widget.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'bb-wjs');
+                        </script>
+                </p>
+            </div>
+        </section>
+    </section>
+    <script src="./js/main.js"></script>
 </body>
 </html>
