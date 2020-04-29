@@ -1,0 +1,19 @@
+{
+  "name": "exmag_landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iths-olle-forsslof/floating-book.git"
+  },
+  "author": "OF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iths-olle-forsslof/floating-book/issues"
+  },
+  "homepage": "https://github.com/iths-olle-forsslof/floating-book#readme"
+}
